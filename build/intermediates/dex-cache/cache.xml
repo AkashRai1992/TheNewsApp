@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/com.facebook.rebound/rebound/0.3.8/c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e/rebound-0.3.8.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c8b90640dddaf1e7ad75d7cb00b09a44b3788f7e">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/rebound-0.3.8-5ba412ea6162d2e1a552843d1934bc43821a6078.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-e6d3e7032f422fe68ed557074504a81ddfaf8e63.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-8c31e84b5a695517af6250f603b3e301a4b3b814.jar" />
+    </item>
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-core/4.48/e579bd2905d0399af5029aaaf9817d5fa0ca88a5/ormlite-core-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e579bd2905d0399af5029aaaf9817d5fa0ca88a5">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/ormlite-core-4.48-f9e03b0687bf123a4f24157469b1b7b4a673fcfa.jar" />
+    </item>
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/com.j256.ormlite/ormlite-android/4.48/afa06f539a4026c10b247386312aa67404b80a16/ormlite-android-4.48.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="afa06f539a4026c10b247386312aa67404b80a16">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/ormlite-android-4.48-4ea7250ac4bf0b2c278f6cdcc1410489b08426fa.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/libs/gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="973e832af433b44c3ed11c426f2f390b29f3f3f8">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/gson-2.2.4-1da1a846d7b01882882b637579378351b6839214.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-101bbec5a017442354380981d9de4e89138803dc.jar" />
+    </item>
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/eventbus-2.4.0-a7571d98c827158e7b2687d807199e925337c4c3.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5e412e954a24c5310a459c09870e4e2081aceb03">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-fd1b3da9b5fac14af86b4062e0bf2d926a51caf0.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.mcxiaoke.volley/library-aar/1.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e40b9a81989bd4a846018551c280f8c4d837bf2e">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-221b9844011c012edbdc26d0038b31ec8e8fe72b.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-069b66a3dc2e4a10edd4d97a24ba46d26754d1c8.jar" />
+    </item>
+    <item
+        jar="/home/akash/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-2e25198639a38bc0be457b44f2e55455c09f75af.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-measurement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-2563a69dde8034c6a2578aff46e06b7b7fcce1e0.jar" />
+    </item>
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/org.jsoup/jsoup/1.7.3/92568d7167ce1bf9eb1fd815b022d5a2c113547a/jsoup-1.7.3.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="92568d7167ce1bf9eb1fd815b022d5a2c113547a">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/jsoup-1.7.3-d5d6ed4344b685232773290d7220251b89bfb559.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-1616c4a43bd9531446110405f7c244ca7849a309.jar" />
+    </item>
+    <item
+        jar="/home/akash/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/glide-3.6.1-55f3d34e375a2ea8c12fd58084a51307cc41f8cd.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-a05590104d5db84b03b0d63369e02033f92ea9cd.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-aa07a82f4660b767644a338965cca883527cd250.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-5cfb821a28ed8b5ee6a896c1657c1221c33f0ba3.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-b6d47d5f2f2997ce74e6f994e3d2d1f02216b516.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/ch.acra/acra/4.7.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c96d8441fa3e6429525e89628f171cb54d2b61c1">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-5df1f72670a65469d3743512d6ac223c3a965b73.jar" />
+    </item>
+    <item
+        jar="/home/akash/TheNewsHour/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="/home/akash/TheNewsHour/app/build/intermediates/pre-dexed/debug/classes-9e08ad90f132734bff0802c979c1b56e258fe2a0.jar" />
+    </item>
+
+</items>
