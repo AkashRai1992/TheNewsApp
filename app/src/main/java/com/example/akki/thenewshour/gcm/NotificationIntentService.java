@@ -50,7 +50,7 @@ public class NotificationIntentService extends IntentService {
         Log.d("url", "on handle intent called" + String.valueOf(intent));
         if (intent != null) {
             GoogleCloudMessaging gcm = GoogleCloudMessaging.getInstance(this);
-            generateNotification("abcd", "abcd", "abcd", "abcd");
+            /*generateNotification("abcd", "abcd", "abcd", "abcd");*/
             NotificationReceiver.completeWakefulIntent(intent);
         }
     }
