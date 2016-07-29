@@ -37,7 +37,6 @@ import com.example.akki.thenewshour.recievers.AlarmReciever;
 import com.example.akki.thenewshour.utils.AppUtils;
 import com.example.akki.thenewshour.utils.NewsFeedDatabaseHelper;
 import com.example.akki.thenewshour.viewHolders.AppDrawerLayout;
-import com.j256.ormlite.android.apptools.OpenHelperManager;
 
 import de.greenrobot.event.EventBus;
 
@@ -58,18 +57,25 @@ public class HomePageActivity extends BaseActivity
     private Menu mAppMenu;
     private ImageView mNavigationHeaderImage;
     private NewsFeedDatabaseHelper mUserPrefDBHelper;
+    private boolean isPermissionGranted = false;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_activity_home_page);
+        isPermissionGranted = getIntent().getBooleanExtra(AppConstants.IS_SETTINGS_PERMISSION_GRANTED, false);
+        initialiseHomePage();
+    }
+
+    private void initialiseHomePage() {
         init();
         setNavigationDrawer();
         assignListners();
         setTabSelectedListener();
         mEventPostingBus.register(this);
-       /* startAlarmService();*/
     }
+
 
     private void startAlarmService() {
         Intent alarmIntent = new Intent(HomePageActivity.this, AlarmReciever.class);
@@ -221,18 +227,19 @@ public class HomePageActivity extends BaseActivity
     }
 
     private void showBrightnessBar() {
-        final BrightnessBarDialog brightnessBarDialog = new BrightnessBarDialog(this, getContentResolver());
-        brightnessBarDialog.show();
-        Window window = brightnessBarDialog.getWindow();
-        window.setLayout(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-        brightnessBarDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
-            @Override
-            public void onDismiss(DialogInterface dialog) {
-                setActivityBrightness(brightnessBarDialog.mLocalBrightness);
-                mLocalBrightness = brightnessBarDialog.mLocalBrightness;
-            }
-        });
-
+        if (isPermissionGranted) {
+            final BrightnessBarDialog brightnessBarDialog = new BrightnessBarDialog(this, getContentResolver());
+            brightnessBarDialog.show();
+            Window window = brightnessBarDialog.getWindow();
+            window.setLayout(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+            brightnessBarDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                @Override
+                public void onDismiss(DialogInterface dialog) {
+                    setActivityBrightness(brightnessBarDialog.mLocalBrightness);
+                    mLocalBrightness = brightnessBarDialog.mLocalBrightness;
+                }
+            });
+        }
     }
 
     private void changeAppTextSize(float summarySize, float headingSize) {
@@ -313,26 +320,32 @@ public class HomePageActivity extends BaseActivity
     @Override
     protected void onPause() {
         super.onPause();
-        setActivityBrightness(mSystemBrightness);
+        if (isPermissionGranted)
+            setActivityBrightness(mSystemBrightness);
     }
 
     private void setActivityBrightness(int brightness) {
-        AppUtils.setAppBrightness(brightness, getContentResolver(), getWindow());
-        saveLocalBrightness();
+        if (isPermissionGranted) {
+            AppUtils.setAppBrightness(brightness, getContentResolver(), getWindow());
+            saveLocalBrightness();
+        }
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        try {
-            mSystemBrightness = Settings.System.getInt(
-                    getContentResolver(), Settings.System.SCREEN_BRIGHTNESS);
-        } catch (Settings.SettingNotFoundException e) {
-            e.printStackTrace();
+        if (isPermissionGranted) {
+            try {
+                mSystemBrightness = Settings.System.getInt(
+                        getContentResolver(), Settings.System.SCREEN_BRIGHTNESS);
+            } catch (Settings.SettingNotFoundException e) {
+                e.printStackTrace();
+            }
         }
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         mLocalBrightness = mSharedPreferences.getInt(AppConstants.LOCAL_BRIGHTNESS_KEY, mSystemBrightness);
         setActivityBrightness(mLocalBrightness);
+
     }
 
     private void saveLocalBrightness() {
@@ -366,7 +379,9 @@ public class HomePageActivity extends BaseActivity
                     break;
             }
         }
+
     }
+
 
     private void setMenuItem() {
         mAppMenu.findItem(R.id.action_gmail_fb_login).setTitle("Logout");
@@ -380,6 +395,6 @@ public class HomePageActivity extends BaseActivity
 
     public void onEvent(Bitmap event) {
 
-        AppUtils.animatedDialog(this,event);
+        AppUtils.animatedDialog(this, event);
     }
 }

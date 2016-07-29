@@ -40,4 +40,5 @@ public class AppConstants {
     private static final String CLIENT_ID = "535422354262-4q8qnkt8ootcg03cr8ou51rk1lp9gsvh.apps.googleusercontent.com";
     public static final String USER_DISPLAY_PIC = "userDp";
     public static final String SAVED_NEWS_FEED = "savedFeed";
+    public static final String IS_SETTINGS_PERMISSION_GRANTED = "isSettingsPermissionGranted";
 }
